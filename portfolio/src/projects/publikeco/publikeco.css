@@ -1,0 +1,26 @@
+.PublikecoPage {
+    color: white;
+    display: flex;
+    max-height: calc(100vh - 97px);
+    align-content: center;
+    flex-direction: column;
+    overflow-y: auto; 
+    user-select: none;
+}
+
+.PublikecoPage iframe {
+    max-width: 100%;
+}
+
+.PublikecoPage::-webkit-scrollbar-thumb {
+    position: absolute;
+    background-color: #c01739;
+    border: 7px solid transparent;
+    border-radius: 10px;
+    background-clip: padding-box;
+}
+
+.PublikecoPage::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}

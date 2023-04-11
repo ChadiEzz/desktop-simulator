@@ -1,27 +1,23 @@
 import React from 'react';
 import './App.css';
 
-// External Components
-import Draggable from 'react-draggable';
-
 // My Components
 import Footer from './components/footer/footer';
+import Shortcut from './components/shortcut/shortcut';
+import FileExplorer from './components/fileExplorer/fileExplorer';
 
 function App() {
-  const Draggable1: any = Draggable;
 
   return (
     <div className='App'>
       <div className='DragZone'>
-        <Draggable1 bounds="parent">
-          <div className='Draggable'>SHORTCUT 1</div>
-        </Draggable1>
-        <Draggable1 bounds="parent">
-          <div className='Draggable'>SHORTCUT 1</div>
-        </Draggable1>
-
+        <Shortcut title='RecycleBin' icon='./images/shortcut-icons/bin-icon.png' />
+        <Shortcut title='VSCodebutlongerversion.exe' icon='./images/shortcut-icons/vscode-icon.png' />
+        <Shortcut title='VSCode longg but splitted.exe' icon='./images/shortcut-icons/vscode-icon.png' />
+        <Shortcut title='Publikeco' icon='./images/shortcut-icons/publikeco-icon.png' />
+        <FileExplorer />
       </div>
-      <Footer color="red" />
+      <Footer color="#c01739" />
     </div>
   );
 }

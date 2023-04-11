@@ -1,0 +1,25 @@
+.Draggable {
+    user-select: none;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    border-radius: 10px;
+    margin: 8px;
+}
+
+.Draggable img {
+    width: 96px;
+    height: 96px;
+}
+
+.Draggable:hover {
+    background: rgba(202, 37, 119, 0.5);
+    cursor: pointer;
+}
+
+.caption {
+    display: block;
+    word-break: break-word;
+    color: white;
+}

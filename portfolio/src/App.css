@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: #111;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -13,10 +13,7 @@ body {
 .DragZone {
   height: 100vh;
   width: 100vw;
-}
-
-.Draggable {
-  position: absolute;
-  user-select: none;
-  color: red;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
 }
